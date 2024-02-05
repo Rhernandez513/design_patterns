@@ -1,0 +1,18 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - dotnet build design_patterns.sln
+  run:
+    cmds:
+      - dotnet run design_patterns.sln
+  hello:
+    cmds:
+      - echo 'Hello World from Task!'
+    silent: true
+  clean:
+    cmds:
+      - rm -rf obj
+      - rm -rf bin
+    silent: true
