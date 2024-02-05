@@ -1,3 +1,6 @@
+.env
+bin
+obj
 # Created by https://www.toptal.com/developers/gitignore/api/chsharp,vim,linux,macos,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=chsharp,vim,linux,macos,windows
 
@@ -25,7 +28,8 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
