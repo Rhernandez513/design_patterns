@@ -1,0 +1,18 @@
+{
+    "name": "C# (.NET 8)",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "extensions": [
+        "ms-dotnettools.csharp",
+        "ms-dotnettools.csdevkit"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {
+            "version": "latest"
+        }
+      }
+}
