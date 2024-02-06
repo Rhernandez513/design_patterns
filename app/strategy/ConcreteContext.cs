@@ -8,7 +8,6 @@ class ConcreteContext : IContext {
     public long Execute(string a, int b) {
         if (_strategy == null) {
             return -1;
-            // throw new InvalidOperationException("Strategy not set");
         }
         return _strategy.Execute(a, b);
     }
