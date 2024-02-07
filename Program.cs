@@ -1,14 +1,15 @@
-using System.Net;
-
 static class Program {
     static void Main() {
         Console.WriteLine("Running StrategyClient");
-        StrategyClient.run();
+        StrategyClient.Run();
 
         Console.WriteLine("\nRunning ObserverClient");
-        ObserverClient.run();
+        ObserverClient.Run();
 
         Console.WriteLine("\nRunning DecoratorClient");
-        DecoratorClient.run();
+        DecoratorClient.Run();
+
+        Console.WriteLine("\nRunning FactoryClient");
+        FactoryClient.Run();
     }
 }

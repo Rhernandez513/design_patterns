@@ -1,5 +1,5 @@
 class StrategyClient  {
-    public static int run() {
+    public static int Run() {
 
         Console.WriteLine("Strategy Pattern");
 
