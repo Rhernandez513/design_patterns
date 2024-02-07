@@ -7,5 +7,8 @@ static class Program {
 
         Console.WriteLine("\nRunning ObserverClient");
         ObserverClient.run();
+
+        Console.WriteLine("\nRunning DecoratorClient");
+        DecoratorClient.run();
     }
 }
