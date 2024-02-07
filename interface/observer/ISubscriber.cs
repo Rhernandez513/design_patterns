@@ -1,5 +1,5 @@
 interface ISubscriber
 {
     void Update();
-    void Update(byte[] data);
+    void Update(string[] data);
 }

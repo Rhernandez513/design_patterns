@@ -1,10 +1,8 @@
 abstract class AbstractSubscriber : ISubscriber
 {
-    private byte[] _data;
-    private List<IPublisher> subscriptions = new List<IPublisher>();
-
+    protected string[]? _data;
     public abstract void Update();
-    public void Update(byte[] data) {
+    public void Update(string[] data) {
         if (data != null) {
             _data = data;
         }

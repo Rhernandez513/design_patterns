@@ -1,6 +1,7 @@
 interface IPublisher
 {
-    void AddSubscriber(ISubscriber subscriber);
-    void RemoveSubscriber(ISubscriber subscriber);
+    void Subscribe(ISubscriber subscriber);
+    void Unsubscribe(ISubscriber subscriber);
     void NotifySubscribers();
+    void NotifySubscribers(string[] data);
 }   
