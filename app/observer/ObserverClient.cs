@@ -13,6 +13,6 @@ public static class ObserverClient {
         publisher.NotifySubscribers();
         string[] _data = ["Hello ", "from ", "Concrete ", "Publisher!"];
         publisher.NotifySubscribers(_data);
-        Console.WriteLine(subscriber2.toString());
+        Console.WriteLine(subscriber2.ToString());
     }
 }
