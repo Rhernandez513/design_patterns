@@ -1,5 +1,5 @@
 public static class ObserverClient {
-    public static void run() {
+    public static void Run() {
 
         Console.WriteLine("Observer Pattern");
 
