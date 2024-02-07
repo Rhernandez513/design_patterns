@@ -1,7 +1,7 @@
-class Client  {
-    static int Main() {
+class StrategyClient  {
+    public static int run() {
 
-        Console.WriteLine("Strategy Pattern\n");
+        Console.WriteLine("Strategy Pattern");
 
         runSubtractionStrategy();
         runAdditionStrategy();
