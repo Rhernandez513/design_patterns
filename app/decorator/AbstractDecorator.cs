@@ -1,11 +1,6 @@
-abstract class AbstractDecorator : IComponent
+abstract class AbstractDecorator(IComponent component) : IComponent
 {
-    protected IComponent _component;
-
-    public AbstractDecorator(IComponent component)
-    {
-        _component = component;
-    }
+    protected IComponent _component = component;
 
     public virtual void Execute()
     {
