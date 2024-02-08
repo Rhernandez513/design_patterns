@@ -6,7 +6,7 @@ class ConcreteSubscriber : AbstractSubscriber
         Console.WriteLine("Update called on ConcreteSubscriber: " + _id);
     }
     public override string ToString() {
-        _data = _data ?? [];
+        _data ??= [];
         string message = "ConcreteSubscriber: " + _id + " " + "Data: " + string.Join("", _data) + "\n";
         return message;
     }

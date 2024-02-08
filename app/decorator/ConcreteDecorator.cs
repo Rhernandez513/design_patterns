@@ -1,9 +1,5 @@
-class ConcreteDecorator : AbstractDecorator
+class ConcreteDecorator(IComponent component) : AbstractDecorator(component)
 {
-    public ConcreteDecorator(IComponent component) : base(component)
-    {
-    }
-
     public override void Execute()
     {
         base.Execute();
