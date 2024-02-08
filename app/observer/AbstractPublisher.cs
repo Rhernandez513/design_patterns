@@ -1,6 +1,6 @@
 abstract class AbstractPublisher : IPublisher
 {
-    protected List<ISubscriber> observers = new List<ISubscriber>();
+    protected List<ISubscriber> observers = [];
 
     public void Subscribe(ISubscriber observer)
     {
