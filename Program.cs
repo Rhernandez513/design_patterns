@@ -11,5 +11,8 @@ static class Program {
 
         Console.WriteLine("\nRunning FactoryClient");
         FactoryClient.Run();
+
+        Console.WriteLine("\nRunning SingletonClient");
+        SingletonClient.Run();
     }
 }
