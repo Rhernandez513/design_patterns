@@ -3,12 +3,12 @@ class StrategyClient  {
 
         Console.WriteLine("Strategy Pattern");
 
-        runSubtractionStrategy();
-        runAdditionStrategy();
+        RunSubtractionStrategy();
+        RunAdditionStrategy();
 
         return 0;
     }
-    static void runSubtractionStrategy() {
+    static void RunSubtractionStrategy() {
         IStrategy chosenStrategy = new ConcreteStrategyTwo();
         IContext context = new ConcreteContext().IContext(chosenStrategy);
 
@@ -19,7 +19,7 @@ class StrategyClient  {
         Console.WriteLine("Subtraction Strategy: " + result);
     }
 
-    static void runAdditionStrategy() {
+    static void RunAdditionStrategy() {
 
         IStrategy chosenStrategy = new ConcreteStrategyOne();
         IContext context = new ConcreteContext().IContext(chosenStrategy);
