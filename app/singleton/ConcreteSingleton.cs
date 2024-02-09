@@ -1,15 +1,6 @@
-class ConcreteSingleton {
-    private static ConcreteSingleton? _instance;
-    private ConcreteSingleton() { }
-    public static ConcreteSingleton Instance {
-        get {
-            if (_instance == null) {
-                _instance = new ConcreteSingleton();
-            }
-            return _instance;
-        }
-    }
+class ConcreteSingleton : AbstractSingleton<ConcreteSingleton>
+{
     public void DoSomething() {
-        Console.WriteLine("Doing something...");
+        Console.WriteLine("ConcreteSingletonTwo.DoSomething()");
     }
 }
