@@ -1,6 +1,6 @@
 class ConcreteSingleton : AbstractSingleton<ConcreteSingleton>
 {
-    public void DoSomething() {
-        Console.WriteLine("ConcreteSingletonTwo.DoSomething()");
+    public void Execute() {
+        Console.WriteLine("ConcreteSingleton.Execute()");
     }
 }

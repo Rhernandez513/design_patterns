@@ -1,13 +1,7 @@
-abstract class AbstractSingleton<T> {
-    private static Lazy<T>? instance;
-    public static Lazy<T> Instance {
-        get {
-            if (instance == null) {
-                instance = new Lazy<T>(() => Activator.CreateInstance<T>());
-                // instance = Activator.CreateInstance<T>();
-            }
-            return instance;
-        }
+abstract class AbstractSingleton<T> where T : new() {
+    private static readonly Lazy<T> instance;
+    public static T Instance { get { return instance.Value; } }
+    static AbstractSingleton() { 
+        instance = new Lazy<T>(() => new T());
     }
-    protected AbstractSingleton() { }
 }
