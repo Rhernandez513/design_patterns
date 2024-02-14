@@ -1,9 +1,9 @@
 class SingletonClient {
     public static void Run() {
-        // Create a Singleton and then use it to create a ConcreteProduct
-        ConcreteSingleton firstSingleton = ConcreteSingleton.Instance;
-        ConcreteSingleton secondSingleton = ConcreteSingleton.Instance;
-        firstSingleton.DoSomething();
-        Console.WriteLine("firstSingleton == secondSingleton: " + (firstSingleton == secondSingleton));
+        ConcreteSingleton lazySingletonOne = ConcreteSingleton.Instance;
+        ConcreteSingleton lazySingletonTwo = ConcreteSingleton.Instance;
+
+        lazySingletonOne.Execute();
+        Console.WriteLine("firstSingleton == secondSingleton: " + (lazySingletonOne == lazySingletonTwo));
     }
 }
