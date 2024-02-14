@@ -14,5 +14,8 @@ static class Program {
 
         Console.WriteLine("\nRunning SingletonClient");
         SingletonClient.Run();
+
+        Console.WriteLine("\nRunning CommandClient");
+        CommandClient.Run();
     }
 }
