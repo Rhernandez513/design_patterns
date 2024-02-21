@@ -17,5 +17,8 @@ static class Program {
 
         Console.WriteLine("\nRunning CommandClient");
         CommandClient.Run();
+
+        Console.WriteLine("\nRunning AdapterClient");
+        AdapterClient.Run();
     }
 }
