@@ -4,13 +4,13 @@ class ConcreteSubscriber : AbstractSubscriber
     private readonly string _id = Guid.NewGuid().ToString();
     public override void Update()
     {
-        System.Threading.Interlocked.Increment(ref callCount);
+        Interlocked.Increment(ref callCount);
         Console.WriteLine("Update #"+callCount+" called on ConcreteSubscriber: " + _id);
     }
 
     public override void Update(string[] data)
     {
-        System.Threading.Interlocked.Increment(ref callCount);
+        Interlocked.Increment(ref callCount);
         base.Update(data);
         Console.WriteLine("Data updated on ConcreteSubscriber: " + _id);
         Console.WriteLine("Update #"+callCount+" called on ConcreteSubscriber: " + _id);

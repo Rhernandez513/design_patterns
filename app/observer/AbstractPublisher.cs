@@ -2,6 +2,8 @@ abstract class AbstractPublisher : IPublisher
 {
     protected List<ISubscriber> observers = [];
 
+    public abstract void NotifySubscribers(string[] data);
+
     public void Subscribe(ISubscriber observer)
     {
         observers.Add(observer);
@@ -19,6 +21,4 @@ abstract class AbstractPublisher : IPublisher
             observer.Update();
         }
     }
-
-    public abstract void NotifySubscribers(string[] data);
 }
