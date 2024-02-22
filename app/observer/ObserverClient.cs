@@ -1,8 +1,6 @@
 public static class ObserverClient {
     public static void Run() {
 
-        Console.WriteLine("Observer Pattern");
-
         var publisher = new ConcretePublisher();
         var subscriber1 = new ConcreteSubscriber();
         var subscriber2 = new ConcreteSubscriber();

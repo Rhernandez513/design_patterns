@@ -13,6 +13,7 @@ tasks:
     silent: true
   clean:
     cmds:
+      - dotnet clean
       - rm -rf obj
       - rm -rf bin
     silent: true
